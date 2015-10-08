@@ -1,0 +1,9 @@
+|samplename |jobname |cmd                 |
+|:----------|:-------|:-------------------|
+|samp1      |hello   |echo Hello World !  |
+|samp1      |sleep   |sleep 5             |
+|samp1      |sleep   |sleep 5             |
+|samp1      |tmp     |cat $RANDOM > tmp1  |
+|samp1      |tmp     |cat $RANDOM > tmp2  |
+|samp1      |merge   |cat tmp1 tmp2 > tmp |
+|samp1      |size    |du -sh tmp          |

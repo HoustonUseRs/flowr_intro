@@ -1,0 +1,6 @@
+jobname	sub_type	prev_jobs	dep_type	queue	memory_reserved	walltime	cpu_reserved	platform	jobid
+hello	serial	none	none	short	2000	1:00	1	local	1
+sleep	scatter	hello	burst	short	2000	1:00	1	local	2
+tmp	scatter	sleep	serial	short	2000	1:00	1	local	3
+merge	serial	tmp	gather	short	2000	1:00	1	local	4
+size	serial	merge	serial	short	2000	1:00	1	local	5
